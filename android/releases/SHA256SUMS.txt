@@ -1,0 +1,2 @@
+185a80663dbc2530534d9d6f43c8827d6fa5e69c06882587e16b4fb856582416  MailOS-Android-1.0.4-debug.apk
+d2fda641af822cc5ebb09c69ae467cd083ee07e3d9926118211cc56c533dc4c0  MailOS-Android-1.0.5-debug.apk

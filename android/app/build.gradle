@@ -1,0 +1,45 @@
+plugins {
+    id "com.android.application"
+}
+
+def uploadKeyProperties = new Properties()
+def uploadKeyFile = rootProject.file("upload-key.properties")
+if (uploadKeyFile.exists()) {
+    uploadKeyProperties.load(new FileInputStream(uploadKeyFile))
+}
+
+android {
+    namespace "com.fourteen.mailos"
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.fourteen.mailos"
+        minSdk 26
+        targetSdk 36
+        versionCode 6
+        versionName "1.0.5"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    signingConfigs {
+        if (uploadKeyFile.exists()) {
+            release {
+                storeFile rootProject.file(uploadKeyProperties["storeFile"])
+                storePassword uploadKeyProperties["storePassword"]
+                keyAlias uploadKeyProperties["keyAlias"]
+                keyPassword uploadKeyProperties["keyPassword"]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            if (uploadKeyFile.exists()) signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+	"name": "mailos-bridge",
+	"version": "0.1.0",
+	"private": true,
+	"description": "POP3 and SMTP bridge so Gmail, Outlook, Apple Mail and Thunderbird can use MailOS mailboxes. By 14 Technologies.",
+	"license": "AGPL-3.0-only",
+	"type": "module",
+	"main": "src/index.js",
+	"engines": { "node": ">=20" },
+	"scripts": {
+		"start": "node src/index.js",
+		"test": "node --test test/*.test.js"
+	},
+	"dependencies": {
+		"smtp-server": "^3.13.6"
+	}
+}

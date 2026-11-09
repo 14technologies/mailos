@@ -1,0 +1,11 @@
+MailOS
+Portions Copyright (C) 2026 Hieu Nguyen and contributors (see AUTHORS.md)
+Modifications Copyright (C) 2026 14 Technologies (https://14technologies.com)
+
+MailOS is a modified version of an open-source program licensed under the
+GNU Affero General Public License, version 3. 14 Technologies has modified it
+since November 2026: the MailOS name and design, the Android app, the chat
+layout, licensing, admin tools and the POP3/SMTP bridge, among other changes.
+
+This program is distributed under the terms of the GNU AGPL v3 (see LICENSE),
+WITHOUT ANY WARRANTY.
