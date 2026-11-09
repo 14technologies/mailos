@@ -15,7 +15,7 @@ Free and open source, by <a href="https://14technologies.com">14 Technologies</a
 
 <p align="center"><a href="https://deploy.workers.cloudflare.com/?url=https://github.com/14technologies/mailos"><img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare"></a></p>
 
-<p align="center"><a href="https://14technologies.github.io/mailos/"><img src="screenshots/mailos-demo.png" alt="MailOS inbox" width="860"></a></p>
+<p align="center"><a href="https://14technologies.github.io/mailos/"><img src="screenshots/mailos-demo.gif" alt="MailOS in action: a new email arrives, a reply types itself and sends, accent colours change" width="860"></a></p>
 
 ## Free means free
 
